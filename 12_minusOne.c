@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 /* 
  * minusOne - return a value of -1 
@@ -8,7 +9,18 @@
  */
 int minusOne(void)
 {
-    return 2;
+    // does not work{
+    // int answer = INT_MIN;
+    // answer--;
+    // return answer;
+    // }
+
+    int a = 0;
+    return ~a;
+
+    return ~1 + 1;
+
+    return (1 << 31) >> 31;
 }
 
 int test_minusOne(void)

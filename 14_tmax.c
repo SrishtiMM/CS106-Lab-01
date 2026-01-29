@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 /* 
  * TMax - return maximum two's complement integer 
@@ -8,7 +9,10 @@
  */
 int tmax(void)
 {
-    return 2;
+    return ~(0x80 << 24);    //works
+
+    return ~INT_MIN;        //works
+
 }
 
 int test_tmax(void)

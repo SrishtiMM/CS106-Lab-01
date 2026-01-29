@@ -8,7 +8,19 @@
  */
 int evenBits(void)
 {
-    return 2;
+//     int pattern = 0x55;
+// //return pattern;
+//     int ans = pattern << 8;
+// // return ans;
+//     ans += pattern;
+//     int half = ans; 
+// // return ans;
+//     ans << 16;
+//     ans += half; 
+//     return ans;
+
+return (((0x55 << 8) | (0x55 << 16) | (0x55 < 24) | (0x55)) << 8 | 0x55);   //why 5 timesssss 
+
 }
 
 int test_evenBits(void)

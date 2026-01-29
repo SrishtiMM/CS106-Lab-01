@@ -9,8 +9,10 @@
  */
 int isZero(int x)
 {
-    return 2;
+    return !x ;
 }
+
+//x ^ 1
 
 int test_isZero(int x)
 {
@@ -19,7 +21,11 @@ int test_isZero(int x)
 
 int main(void)
 {
-    int x = 0;
-    printf("expected: %x\n", isZero(x));
-    printf("actual  : %x\n", test_isZero(x));
+    for (int x = -1 ; x < 5 ; x++){
+        // int x = 0;
+        printf("x is %d\n", x);
+        printf("expected: %x\n", isZero(x));
+        printf("actual  : %x\n", test_isZero(x));
+
+    }
 }
